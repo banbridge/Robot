@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="gyb.henu.robot.MainActivity"
+    >
+
+
+
+        <RelativeLayout
+            android:id="@+id/id_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ee0b0b0b">
+            <EditText
+                android:id="@+id/id_input"
+                android:layout_width="250dp"
+                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:text="你好"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minHeight="40dp"
+                android:singleLine="false"
+                 android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btnselect"
+                android:onClick="btn_click"
+                android:text="发 送"
+
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/id_input"
+                android:layout_toEndOf="@+id/id_input"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:background="@drawable/back"
+            android:layout_above="@+id/id_relative"
+            android:id="@+id/id_main_recyleListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="3dp" />
+
+
+    </RelativeLayout>
+
+
